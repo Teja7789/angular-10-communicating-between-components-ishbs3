@@ -1,0 +1,20 @@
+<div class="card mb-3">
+    <h4 class="card-header">Angular Subject Communication</h4>
+    <div class="card-body">
+<form #ref="ngForm" (ngSubmit)="sendData(ref)">
+    <label for="">Firstname</label>
+    <input type="text" name="">
+            <br/>
+            <br/>
+            <label for="">Lastname</label>
+            <input type="text" name="username">
+            <br/>
+            <br/>
+            <button (click)="sendMessage(ref.value)" type="submit" class="btn btn-primary mr-2" >Submit</button>
+            <br/>
+            <br/>
+        <!-- <button (click)="sendMessage()" class="btn btn-primary mr-2">Send Message</button> -->
+        <button (click)="clearMessages()" class="btn btn-secondary">Clear Messages</button>
+</form>
+    </div>
+</div>
